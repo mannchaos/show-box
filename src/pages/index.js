@@ -9,7 +9,7 @@ export const index = () => {
 			<Head>
 				<title>Home</title>
 			</Head>
-			{/* <Header /> */}
+			<Header />
 			<HomeBanner />
 		</>
 	);
