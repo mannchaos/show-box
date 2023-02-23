@@ -5,4 +5,14 @@
 	width: 100%;
 	background-color: transparent;
 	color: white;
+	padding-top: 48px;
+}
+
+.header ul {
+	padding-right: 98px;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 64px;
+	list-style: none;
+	justify-content: end;
 }

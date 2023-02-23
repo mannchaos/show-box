@@ -1,0 +1,10 @@
+.movie__title {
+	color: white;
+	font-size: 112px;
+	font-weight: 900;
+	text-transform: uppercase;
+	position: absolute;
+	inset: auto auto 20% 7%;
+	max-width: 100px;
+	width: 100%;
+}

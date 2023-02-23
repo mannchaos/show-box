@@ -12,6 +12,9 @@ export const HomeBanner = () => {
 					sizes="(max-width : 1920px) 100%,
 				(height: 100%)"
 				/>
+				<div>
+					<p className={HomeBannerStyle.movie__title}>La La Land</p>
+				</div>
 			</div>
 		</>
 	);
