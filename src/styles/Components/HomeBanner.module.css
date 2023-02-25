@@ -1,10 +1,39 @@
-.movie__title {
+.movie__info {
 	color: white;
+	position: absolute;
+	inset: auto auto 20% 7%;
+	display: grid;
+	grid-auto-flow: row;
+	gap: 8px;
+}
+
+.movie__info__title {
 	font-size: 112px;
 	font-weight: 900;
 	text-transform: uppercase;
-	position: absolute;
-	inset: auto auto 20% 7%;
 	max-width: 100px;
 	width: 100%;
+}
+
+.movie__info__details,
+.movie__info__details > div {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 16px;
+	place-content: center;
+	font-size: 16px;
+}
+
+.movie__info__details > div {
+	gap: 8px;
+}
+
+.movie__info__type > p {
+	background-color: var(--color-yellow);
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 4px;
+	max-width: fit-content;
+	text-align: center;
 }
