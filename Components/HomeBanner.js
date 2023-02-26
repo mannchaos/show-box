@@ -22,8 +22,17 @@ export const HomeBanner = () => {
 						</div>
 					</div>
 					<div className={HomeBannerStyle.movie__info__type}>
-						<p>Tv Show</p>
+						<p>Movie</p>
 					</div>
+				</div>
+				<div className={HomeBannerStyle.movie__content}>
+					<p>
+						<span>Director</span> Damien Chazell
+					</p>
+					<p>
+						<span>Stars</span> Emma Stone, Ryan Gosline
+					</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi id laudantium ipsum autem architecto mollitia eveniet voluptate a fugiat.</p>
 				</div>
 			</div>
 		</>
