@@ -7,10 +7,15 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+body {
+	background-color: var(--color-theme);
+}
+
 :root {
 	--font-family: 'Roboto';
 	--color-purple: #9385e0;
 	--color-gray: #2e2e2e;
 	--color-white: #ffff;
 	--color-yellow: #f9f905;
+	--color-theme: #252324;
 }
