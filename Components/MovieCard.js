@@ -6,6 +6,7 @@ export const MovieCard = (props) => {
 		<>
 			<div className={MovieCardStyle.card}>
 				<img className={MovieCardStyle.card__img} src={props.img} alt="card-banner" />
+				<p className={MovieCardStyle.card__title}>{props.title}</p>
 			</div>
 		</>
 	);

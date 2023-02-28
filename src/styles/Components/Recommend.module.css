@@ -5,11 +5,18 @@
 	margin: 32px auto;
 	display: grid;
 	grid-auto-flow: row;
-	gap: 24px;
+	gap: 32px;
 }
 
 .recommendBox__head {
 	font-size: 32px;
 	color: var(--color-white);
 	font-weight: 600;
+}
+
+.recommendBox__list {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(8, minmax(100px, 150px));
+	gap: 16px;
 }

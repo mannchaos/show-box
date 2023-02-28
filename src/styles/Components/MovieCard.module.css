@@ -1,10 +1,26 @@
 .card {
 	max-width: 200px;
 	width: 100%;
+	display: grid;
+	grid-auto-flow: row;
+	gap: 12px;
 }
 
 .card__img {
-	max-width: 200px;
-	height: 100px;
+	max-width: 150px;
+	height: 200px;
 	width: 100%;
+	border-radius: 5px;
+	transform: 1;
+}
+
+.card__title {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--color-white);
+}
+
+.card__img:hover {
+	max-width: 400px;
+	transition: ease-in-out;
 }

@@ -1,34 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomeBannerStyle from '../src/styles/Components/HomeBanner.module.css';
 import Image from 'next/image';
 
 export const HomeBanner = () => {
-	// const axios = require('axios');
+	const [responseData, setResponseData] = useState('');
+	const axios = require('axios');
 
-	// const options = {
-	// 	method: 'GET',
-	// 	url: 'https://netflix54.p.rapidapi.com/search/',
-	// 	params: {
-	// 		query: 'stranger',
-	// 		offset: '0',
-	// 		limit_titles: '50',
-	// 		limit_suggestions: '20',
-	// 		lang: 'en',
-	// 	},
-	// 	headers: {
-	// 		'X-RapidAPI-Key': '7c772cb93emsh09e5227681a62cap1e0823jsn9bb5aedf72bb',
-	// 		'X-RapidAPI-Host': 'netflix54.p.rapidapi.com',
-	// 	},
-	// };
+	const options = {
+		method: 'GET',
+		url: 'https://netflix54.p.rapidapi.com/search/',
+		params: {
+			query: 'stranger',
+			offset: '0',
+			limit_titles: '50',
+			limit_suggestions: '20',
+			lang: 'en',
+		},
+		headers: {
+			'X-RapidAPI-Key': '7c772cb93emsh09e5227681a62cap1e0823jsn9bb5aedf72bb',
+			'X-RapidAPI-Host': 'netflix54.p.rapidapi.com',
+		},
+	};
 
-	// axios
-	// 	.request(options)
-	// 	.then(function (response) {
-	// 		console.log(response.data);
-	// 	})
-	// 	.catch(function (error) {
-	// 		console.error(error);
-	// 	});
+	axios
+		.request(options)
+		.then(function (response) {
+			setResponseData(response.data);
+			console.log(response);
+		})
+		.catch(function (error) {
+			console.error(error);
+		});
+
 	return (
 		<>
 			<div className={`${HomeBannerStyle.mainBox}`}>
@@ -44,9 +47,7 @@ export const HomeBanner = () => {
 							<p>2019</p>
 						</div>
 					</div>
-					<div className={HomeBannerStyle.movie__info__type}>
-						<p>Movie</p>
-					</div>
+					<div className={HomeBannerStyle.movie__info__type}>Movie</div>
 				</div>
 				<div className={HomeBannerStyle.movie__content}>
 					<p>

@@ -7,8 +7,15 @@ export const Recommend = () => {
 		<>
 			<div className={RecommendStyle.recommendBox}>
 				<p className={RecommendStyle.recommendBox__head}>Recommended</p>
-				<div>
-					<MovieCard img="/images/spidy.jpg" />
+				<div className={RecommendStyle.recommendBox__list}>
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
+					<MovieCard img="/images/spidy.jpg" title="Spiderman" />
 				</div>
 			</div>
 		</>
